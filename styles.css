@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #0b5a00e8;
+    background-color: #485e45e8;
     margin: 0;
     padding: 20px;
     display: flex;
@@ -11,6 +11,9 @@ body {
 
 h1 {
     color: #eef0e3;
+    font-family: "Sigmar", serif;
+    font-weight: 600;
+    font-style: normal;
     text-align: center;
     margin-bottom: 20px;
     transition: transform 0.3s ease, color 0.3s ease;
@@ -21,6 +24,21 @@ h1:hover {
     color: black;
 }
 
+
+h2 {
+    color: rgba(41, 39, 39, 0.884);
+    font-family: "Sigmar", serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h2:hover {
+    transform: scale(1.1);
+   
+}
 .logo-link {
     text-decoration: none;
     color: #333;
