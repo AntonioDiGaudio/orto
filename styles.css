@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b5a00e8;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #eef0e3;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h1:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: flex-start;
+}
+
+.logo-image {
+    width: 100px;
+    height: auto;
+    padding: 10px;
+    border-radius: 33%;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-decoration: none;
+}
+
+.section {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.section img {
+    width: 40%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(2, 1, 1, 0.3);
+}
+
+.card img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    width: 30%;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card h2 {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+}
