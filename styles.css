@@ -1,6 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #485e45e8;
+    background: url('images/backgroundDesktop.gif') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
     margin: 0;
     padding: 20px;
     display: flex;
@@ -8,6 +10,15 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    body {
+        background: url('images/backgroundMobile.gif') no-repeat center center fixed;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
 
 h1 {
     color: #eef0e3;
@@ -54,10 +65,8 @@ h2:hover {
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     border-radius: 15px;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -67,6 +76,7 @@ h2:hover {
     word-wrap: break-word;
     overflow-wrap: break-word;
     text-decoration: none;
+    min-height: 100vh; 
 }
 
 .section {
@@ -119,3 +129,27 @@ h2:hover {
     text-align: center;
     margin-top: 10px;
 }
+
+
+.update-text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin: 15px 0; /* Aggiunge spazio sopra e sotto */
+}
+
+
+
+
+.swiper {
+    width: 100%;
+    height: auto;
+    margin-bottom:8%;
+  }
+  
+  .swiper-slide img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover; 
+  }

@@ -9,9 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Sigmar&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-	<link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <header>
@@ -22,25 +23,77 @@
     </header>
 
     <div class="container">
-        <h1>Aglio</h1>
         <div class="section">
             <h2>Germinazione</h2>
-            <p>Bulbi di aglio germinati in ammollo in acqua(sostenuti da un piatto di plastica).  La germinazione è inizata giorno 17/02/25 e terminata giorno 24/02/25. 3 bulbi su 4 sono sopravissuti alla germinazione.</p>
-            <img src="images/GerminazioneAglio1.png" alt="Germinazione">
-            <img src="images/GerminazioneAglio2.png" alt="Germinazione">
+            <p class="update-text">Bulbi di aglio germinati in ammollo in acqua (sostenuti da un piatto di plastica). La germinazione è iniziata giorno 17/02/25 e terminata giorno 24/02/25. 3 bulbi su 4 sono sopravvissuti alla germinazione.</p>
+            
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/GerminazioneAglio1.png" alt="Germinazione">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/GerminazioneAglio2.png" alt="Germinazione">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
+
         <div class="section">
             <h2>Piantagione</h2>
-            <p>I bulbi germinati sono stati piantati giorno 24/02/25 in un balcone esposto ad EST, con irrigazione 2 volte a settimana.</p>
-            <img src="images/PiantagioneAglio1.png" alt="Piantagione">
-            <p>Inizio dei germogli</p>
-            <img src="images/PiantagioneAglio2.png" alt="Piantagione">
+            <p class="update-text">I bulbi germinati sono stati piantati giorno 24/02/25 in un balcone esposto ad EST, con irrigazione 2 volte a settimana.</p>
+            
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/PiantagioneAglio1.png" alt="Piantagione">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <p class="update-text">Inizio dei germogli dopo 4 giorni</p>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/PiantagioneAglio2.png" alt="Piantagione">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <p class="update-text">Aggiornamenti dopo 10 giorni</p>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/PiantagioneAglio3.png" alt="Piantagione">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/PiantagioneAglio4.png" alt="Piantagione">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
+
         <div class="section">
             <h2>Raccolto</h2>
             <p>In progresso</p>
-            <!-- <img src="images/raccolto.png" alt="Raccolto"> -->
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 </html>
