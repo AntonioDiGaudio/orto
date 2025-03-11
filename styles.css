@@ -71,12 +71,20 @@ h2:hover {
     flex-direction: column;
     gap: 20px;
     margin-top: 20px;
-    width: 80%;
+    width: 96%;
     max-width: 600px;
     word-wrap: break-word;
     overflow-wrap: break-word;
     text-decoration: none;
     min-height: fit-content; 
+}
+
+
+@media (min-width: 768px) {  
+    .container {
+        width: 70%; 
+        max-width: none;
+    }
 }
 
 .section {
@@ -96,32 +104,26 @@ h2:hover {
 }
 
 
+
+@media (min-width: 768px) {  
+    .section img {
+        width: 20%; 
+    }
+}
+
+
 .card {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     text-decoration: none;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
     border-radius: 15px;
-    padding: 15px;
+    padding: 3px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    }
+    
+       
 
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(2, 1, 1, 0.3);
-}
 
-.card img {
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-    width: 30%;
-}
 
-.card:hover img {
-    transform: scale(1.1);
-}
 
 .card h2 {
     color: white;
@@ -129,6 +131,71 @@ h2:hover {
     text-align: center;
     margin-top: 10px;
 }
+
+
+
+
+.card-home {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;  
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 3px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff38;
+    backdrop-filter: blur(5px);
+    width: 200px; 
+    height: 250px; 
+    position: relative;  
+    margin: 20px; 
+}
+
+
+.card-home img {
+    width: 100%;  
+    height: auto;  
+    border-radius: 10px; 
+    object-fit: cover;
+}
+
+
+.card-home span {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    font-size: 18px;  
+    font-family: 'Sigmar', sans-serif;  
+    font-weight: bold;
+    color: white; +
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);  
+}
+
+.card-home:hover {
+    transform: scale(1.05);  
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
+}
+
+.container-home {
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    width: fit-content;
+    max-width: 600px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-decoration: none;
+    min-height: fit-content; 
+}
+
+ 
+
+
 
 
 .update-text {
@@ -144,12 +211,54 @@ h2:hover {
 
 .swiper {
     width: 100%;
-    height: auto;
-    margin-bottom:8%;
+    
+}
+
+.swiper-wrapper{
+    margin-bottom: 3% !important;
+}
+
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100%; /* Imposta una larghezza per ciascuna slide */
+    height: 41%;
+}
+
+
+.swiper-slide img {
+    width: 100%;
+    height:41%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+
+
+
+@media (min-width: 768px) {  
+    .swiper-slide img {
+        width: 59%; 
+    }
+}
+
+
+.swiper-pagination {
+    font-size: 12px;
+    text-align: center;
+    transition: .3s opacity;
+    transform: translate3d(0, 0, 0);
+    position: relative !important;
   }
   
-  .swiper-slide img {
-    width: 80%;
-    height: 80%;
-    object-fit: cover; 
+  .swiper-pagination-fraction {
+    font-weight: bold;
+    padding: 5px 10px;  
+    background-color: #000000b0;
+    backdrop-filter: blur(5px);
+    max-width: 10%;
+    display: inline-block;
+    border-radius: 6px !important;
   }
